@@ -1,4 +1,4 @@
-# mso-comments
+# MSO Comments
 Match all MSO Conditional Comments 
 
 ### Regex 
