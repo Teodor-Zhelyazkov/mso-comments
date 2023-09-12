@@ -1,10 +1,12 @@
 # mso-comments
 Match all MSO Conditional Comments 
 
-# Regex 
+## Regex 
+```
 /<!--\[\s*if (\s*(\||\s*)\s*(!|\(|\s*)\s*(!|\s*)(lte|gte|lt|gt|\s*)\s*(mso)\s*(\d+|\s*)\s*(\)|\s*)\s*)+\]>\s*(<!(-)+>|\s*)([\s\S]*?)(<!(-)+|\s*)\s*<!\[endif\]-->/gm
-
-# Match
+```
+## Match
+```
 <!--[if mso]> your code <![endif]-->
 <!--[if mso 9]> your code <![endif]-->
 <!--[if mso 10]> your code <![endif]-->
@@ -25,3 +27,4 @@ Match all MSO Conditional Comments
 <!--[if gte mso 9]> your code <![endif]-->
 <!--[if !mso 91]> your code <![endif]-->
 <!--[if mso 10 | mso 11 | gte mso 11 | !mso 9 ]> your code <![endif]-->
+```
