@@ -2,7 +2,7 @@
 Match all MSO Conditional Comments 
 
 # Regex 
-<!--\[\s*if (\s*(\||\s*)\s*(!|\(|\s*)\s*(!|\s*)(lte|gte|lt|gt|\s*)\s*(mso)\s*(\d+|\s*)\s*(\)|\s*)\s*)+\]>\s*(<!(-)+>|\s*)([\s\S]*?)(<!(-)+|\s*)\s*<!\[endif\]-->
+/<!--\[\s*if (\s*(\||\s*)\s*(!|\(|\s*)\s*(!|\s*)(lte|gte|lt|gt|\s*)\s*(mso)\s*(\d+|\s*)\s*(\)|\s*)\s*)+\]>\s*(<!(-)+>|\s*)([\s\S]*?)(<!(-)+|\s*)\s*<!\[endif\]-->/gm
 
 # Match
 <!--[if mso]> your code <![endif]-->
